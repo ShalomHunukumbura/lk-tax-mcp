@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ShalomHunukumbura/lk-tax-mcp",
+  "title": "Sri Lanka Tax (lk-tax)",
+  "description": "Exact, sourced Sri Lankan tax calculations: APIT, income tax, withholding tax, VAT and SSCL.",
+  "repository": {
+    "url": "https://github.com/ShalomHunukumbura/lk-tax-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "lk-tax-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

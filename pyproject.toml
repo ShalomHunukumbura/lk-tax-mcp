@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lk-tax-mcp"
+version = "0.1.0"
+description = "MCP server that gives AI assistants exact, sourced Sri Lankan tax calculations (APIT, income tax, WHT, VAT, SSCL)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Shalom Hunukumbura" }]
+keywords = ["mcp", "model context protocol", "sri lanka", "tax", "apit", "vat", "claude"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial :: Accounting",
+]
+dependencies = ["lk-tax>=0.1.0,<0.2", "mcp>=2.2,<3"]
+
+[project.scripts]
+lk-tax-mcp = "lk_tax_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/ShalomHunukumbura/lk-tax-mcp"
+Issues = "https://github.com/ShalomHunukumbura/lk-tax-mcp/issues"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lk_tax_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
