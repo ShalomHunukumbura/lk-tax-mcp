@@ -1,5 +1,7 @@
 # lk-tax-mcp
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/shalomhunukumbura-lk-tax-mcp-rv7vkz?v=8e7359be86bf91d714702022e6c102e1)](https://m8ven.ai/mcp/shalomhunukumbura-lk-tax-mcp-rv7vkz?s=readme)
+
 **Exact, sourced Sri Lankan tax calculations for AI assistants.** An [MCP](https://modelcontextprotocol.io)
 server that lets Claude (or any MCP client) calculate APIT, income tax, withholding tax, VAT and SSCL from
 the official Inland Revenue Department rules for any date since 1 January 2023, instead of recalling
